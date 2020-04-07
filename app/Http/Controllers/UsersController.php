@@ -60,4 +60,10 @@ class UsersController extends Controller
 
         return view('users.followers', $data);
     }
+    public function favorites($id)
+    {
+       $users = User::favorites()->paginate(10);
+       
+       
+    }
 }
