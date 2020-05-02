@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <aside class="col-sm-4">
-            @include('users.card', ['user' => $user])
+            @include('users.card_follow', ['user' => $user])
             
         </aside>
         <div class="col-sm-8">
